@@ -4,7 +4,9 @@ import org.junit.Test;
 
 import java.util.Arrays;
 
-import static org.junit.Assert.*;
+import static com.coding.tdd.PrimeFactors.*;
+import static java.util.Arrays.*;
+import static org.junit.Assert.assertEquals;
 
 /**
  * Created by rsinghal on 1/6/2018.
@@ -21,6 +23,6 @@ public class PrimeFactorsTest {
 
     @Test
     public  void  shouldReturnPrimeFactors() {
-        assertEquals(Arrays.asList(),PrimeFactors.of(1));
+        assertEquals(asList(), of(1));
     }
 }

@@ -25,5 +25,6 @@ public class PrimeFactorsTest {
     public  void  shouldReturnPrimeFactors() {
         assertEquals(asList(), of(1));
         assertEquals(asList(2), of(2));
+        assertEquals(asList(3), of(3));
     }
 }

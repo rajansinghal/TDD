@@ -9,10 +9,10 @@ import java.util.List;
 public class PrimeFactors {
     public static List<Integer> of(int i) {
        ArrayList<Integer> factors = new ArrayList<Integer>();
-       int divisior = 2;
-       for(;i > 1; divisior++)
-           for(;i%divisior == 0; i /= divisior)
-               factors.add(divisior);
+
+       for( int divisior = 2;i > 1; divisior++)
+            for(;i%divisior == 0; i /= divisior)
+                factors.add(divisior);
         return  factors;
     }
 }

@@ -8,19 +8,11 @@ import java.util.List;
  */
 public class PrimeFactors {
     public static List<Integer> of(int i) {
-        ArrayList<Integer> factors = new ArrayList<Integer>();
+       ArrayList<Integer> factors = new ArrayList<Integer>();
        int divisior = 2;
-
-        while(i > 1){
-            while(i%divisior == 0){
-                factors.add(divisior);
-                i /= divisior;
-            }
-            divisior ++;
-        }
-       /* if(i > 1){
-            factors.add(i);
-        }*/
+       for(;i > 1; divisior++)
+           for(;i%divisior == 0; i /= divisior)
+               factors.add(divisior);
         return  factors;
     }
 }
